@@ -1,0 +1,37 @@
+.list--buttons{
+ margin-top:60px;
+}
+
+.buttons__item{
+  width:100px;
+
+  &+&{
+    margin-left:80px;
+  }
+}
+
+.button{
+  border-radius: 100%;
+  width:90px;
+  height: 90px;
+
+  img{
+  @include transition_css(all,0.25s,ease-in-out,0s);
+    border-radius: 100%;
+  }
+}
+
+.button--inactive{
+
+
+  &:hover{
+    img{
+        border:1px solid $color-border--active;
+    }
+  }
+  img{
+
+      border:1px solid $color-border;
+  }
+
+}

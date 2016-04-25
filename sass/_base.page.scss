@@ -1,9 +1,21 @@
 html{
-	
-	font-family: sans-serif;
+
+	font-family: 'Lato', sans-serif;
 	line-height: 1.6;
 	font-size: 18px;
+	font-weight: 400;
 }
 
 html,body {
+}
+
+header{
+	width: 100%;
+	border-bottom:1px solid rgba($color-border,0.4);
+}
+
+.header__background{
+	height:500px;
+	width:100%;
+	@include background_size("../img/beatles.jpg",no-repeat,top,center,cover);
 }

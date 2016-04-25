@@ -1,0 +1,33 @@
+.title__container{
+  text-align: center;
+  margin-top:60px;
+  margin-bottom:40px;
+}
+
+.title__title{
+  font-size: 30px;
+  line-height: 1;
+}
+.title__subtitle{
+  font-size: 22px;
+
+}
+
+.button__infos{
+  margin-top:10px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.button__title{
+  font-size: 20px;
+}
+
+.button__name{
+  font-size: 17px;
+}
+
+.button__name, .title__subtitle{
+  font-weight: 300;
+  color:$color-subtitle;
+}

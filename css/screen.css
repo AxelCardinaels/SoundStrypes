@@ -510,9 +510,48 @@ html {
  * #BASE
  */
 html {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.6;
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: 400; }
+
+header {
+  width: 100%;
+  border-bottom: 1px solid rgba(232, 232, 232, 0.4); }
+
+.header__background {
+  height: 500px;
+  width: 100%;
+  background: url("../img/beatles.jpg") no-repeat top center;
+  background-size: cover;
+  -webkit-background-size: cover; }
+
+.title__container {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px; }
+
+.title__title {
+  font-size: 30px;
+  line-height: 1; }
+
+.title__subtitle {
+  font-size: 22px; }
+
+.button__infos {
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.4; }
+
+.button__title {
+  font-size: 20px; }
+
+.button__name {
+  font-size: 17px; }
+
+.button__name, .title__subtitle {
+  font-weight: 300;
+  color: #919191; }
 
 a {
   text-decoration: none; }
@@ -532,6 +571,34 @@ a {
   list-style: none; }
   .list-inline > li {
     display: inline-block; }
+
+.wrapper--buttons {
+  width: 651px;
+  margin: 0px auto; }
+
+.list--buttons {
+  margin-top: 60px; }
+
+.buttons__item {
+  width: 100px; }
+  .buttons__item + .buttons__item {
+    margin-left: 80px; }
+
+.button {
+  border-radius: 100%;
+  width: 90px;
+  height: 90px; }
+  .button img {
+    -moz-transition: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+    border-radius: 100%; }
+
+.button--inactive:hover img {
+  border: 1px solid #555555; }
+.button--inactive img {
+  border: 1px solid #E8E8E8; }
 
 /**
  * #COMPONENTS

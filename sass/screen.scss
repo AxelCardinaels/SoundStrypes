@@ -84,6 +84,7 @@
  */
 @import "../bower_components/inuit-list-inline/objects.list-inline";
 @import "object.wrappers";
+@import "object.buttons";
 
 
 
@@ -108,4 +109,3 @@ $inuit-enable-margins--none:    true;
 @import "../bower_components/inuit-spacing/trumps.spacing";
 @import "trumps.hide";
 @import "trumps.text-cut";
-
