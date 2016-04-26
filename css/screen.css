@@ -573,7 +573,7 @@ a {
     display: inline-block; }
 
 .wrapper--buttons {
-  width: 651px;
+  width: 840px;
   margin: 0px auto; }
 
 .list--buttons {
@@ -593,12 +593,16 @@ a {
     -ms-transition: all 0.25s ease-in-out 0s;
     -webkit-transition: all 0.25s ease-in-out 0s;
     transition: all 0.25s ease-in-out 0s;
+    border: 1px solid #E8E8E8;
     border-radius: 100%; }
 
 .button--inactive:hover img {
-  border: 1px solid #555555; }
+  opacity: 0.75; }
 .button--inactive img {
-  border: 1px solid #E8E8E8; }
+  opacity: 0.5; }
+
+.button--active img {
+  opacity: 1; }
 
 /**
  * #COMPONENTS
