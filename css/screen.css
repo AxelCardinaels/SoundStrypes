@@ -620,10 +620,19 @@ a {
 
 .loader__bar {
   background: black;
-  height: 1px;
+  height: 2px;
   width: 0%;
   position: absolute;
   top: 50%; }
+
+.loader__container {
+  width: 100%;
+  text-align: center;
+  height: 100%; }
+
+.loader__icon {
+  position: relative;
+  top: 40%; }
 
 /**
  * #TRUMPS
