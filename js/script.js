@@ -3,8 +3,12 @@
   var app = {};
   app.buttons = [];
   app.hasStarted = false;
+  app.pourcentLoaded = 0;
+  app.pourcentToAdd = 0;
+  app.pourcentBar = $('.loader__bar');
 
   app.setup = function(){
+    app.checkLoad();
     app.buttons = $(".button");
     app.buttons.click(function(event){
         event.preventDefault();
@@ -12,6 +16,29 @@
         app.buttonClick(clickedButton);
     });
   };
+
+  app.checkLoad = function(){
+    var audioTags = $("audio");
+
+    app.pourcentToAdd = 100/audioTags.length;
+    var currentAudio;
+    for (var i = 0; i < audioTags.length; i++) {
+      currentAudio = $(audioTags[i]);
+      currentAudio[0].addEventListener('canplaythrough', app.audioLoaded, false);
+    }
+  }
+
+  app.audioLoaded = function(){
+    app.pourcentLoaded = app.pourcentLoaded + app.pourcentToAdd;
+    app.pourcentBar.css("width", app.pourcentLoaded + "%");
+
+
+    if(app.pourcentLoaded === 100){
+      $(".loader").hide();
+      $("main").removeClass("main--waiting");
+    }
+  }
+
 
   app.buttonClick = function(clickedButton){
     if(clickedButton.hasClass("button--active")){

@@ -607,6 +607,24 @@ a {
 /**
  * #COMPONENTS
  */
+.loader {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.main--waiting {
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+  position: absolute; }
+
+.loader__bar {
+  background: black;
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  top: 50%; }
+
 /**
  * #TRUMPS
  */
