@@ -16,22 +16,27 @@
   height: 90px;
 
   img{
-  @include transition_css(all,0.25s,ease-in-out,0s);
+    @include transition_css(all,0.25s,ease-in-out,0s);
+    border:1px solid $color-border;
     border-radius: 100%;
   }
 }
 
 .button--inactive{
 
-
   &:hover{
     img{
-        border:1px solid $color-border--active;
+      opacity: 0.75;
     }
   }
   img{
-
-      border:1px solid $color-border;
+      opacity: 0.5;
   }
 
+}
+
+.button--active{
+  img{
+      opacity: 1;
+  }
 }
